@@ -18,12 +18,13 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-image: url("images/background.png");
+    background-image: url("images/background.webp");
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .cover {
-    width: 250px;
+    max-width: 248px;
     box-shadow: -25px 25px 2px 0px rgba(0, 0, 0, 0.05), -20px 20px 2px 0px rgba(0, 0, 0, 0.10), -15px 15px 2px 0px rgba(0, 0, 0, 0.20), -10px 10px 2px 0px rgba(0, 0, 0, 0.30), -5px 5px 2px 0px rgba(0, 0, 0, 0.40);
 
     margin-bottom: 22px;
@@ -54,7 +55,7 @@ body {
 
 .streamings {
     display: grid;
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 12px;
 }
 
@@ -70,6 +71,19 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 14px;
+    box-sizing: border-box;
+    background: #000;
+}
+
+.logo img {
+    width: 100%;
 }
 
 .authors {
@@ -92,7 +106,7 @@ a {
 
 @media (min-width: 820px) {
     .cover {
-        width: 300px;
+        max-width: 292px;
     }
 
     .title {
